@@ -16333,7 +16333,7 @@ BXNIm5kVzCFtZlYwh7SZWcH+P8WPbSoq2w8YAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.2-Limitation-of-dataset:">4.2 Limitation of dataset:<a class="anchor-link" href="#4.2-Limitation-of-dataset:">&#182;</a></h2>
+<h2 id="4.2-Limitations-of-dataset:">4.2 Limitations of dataset:<a class="anchor-link" href="#4.2-Limitations-of-dataset:">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -16342,7 +16342,52 @@ BXNIm5kVzCFtZlYwh7SZWcH+P8WPbSoq2w8YAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We know that during the evacuation, there were not enough the lifeboats for all the passengers so just some people were chosen for the lifeboats. That means all passengers did not have the same survival probability, they were not treated equally, women and rich people likely to get higher priority than others so the my conclusion would be predicted without any analyzing. So the bias in the treatment with passengers actually controlled the result of analyzing.</p>
+<p>Titanic had an estimated 2,224 people on board when she struck an iceberg and more than 1,500 people dead after it sank, it means there were about 700 people survived. The dataset we have here includes 342 survived 549 non-survived people, it means still lacking information of about 360 survived and 1,000 non-survived people. It is the significant lacking if we compare to the existing dataset, it could limit the analyzing which requires the non-survived people's data, or even result in the incorrect conclusion of analyzing which using that data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>My analyzing with Fare is one sample. I was 99.9% confident to ensure the SURVIVED passengers spent more money than the NON-SURVIVED after doing Hypothesis testing. What will happen if I have enough data? means the data of 1,000 non-survived and 360 survived people lacking would be included as well. I might have to reject the hypothesis or the level of confidence might not be 99.9% anymore. The analyzing with Gender would be affected as well if there is no lacking of data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The second thing is the dataset has columns:</p>
+
+<pre><code>- Pclass represent for the social class.
+- Fare represents for money.
+- SibSp and Parch represents for the number of people of her/his family on the board.
+- Embarked represent for where the passenger started.</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Those informations for me seem to measure the power of their voice on that ship, excluding some basic informations (PassengerId, Survived, Name, Sex) then they occupied 5 per 8 columns of remained informations. Their occurences could make analysts focus on the social informations instead of other personal informations, then it could result in the bias of conclusions.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Another thing about the dataset which I'm still wondering is what should I use the Cabin data for analyzing? For me it is just the name of a room, I don't know where was it in Titanic? It was the left or right side of the ship? How can I know which cabin was near the place where the iceberg collided the ship?... Actually I'm interested in whether or not the passenger's weight affects to the survival? the lifeboat would be not big enough for heavy people so small people could have more chance. I wish more information should be provided then we could see the big picture of disaster. I think that the data was collected based on the point of view of the collecters and it could limit the analyzings.</p>
 
 </div>
 </div>
